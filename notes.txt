@@ -1,0 +1,12 @@
+
+                                        ============= 27/11/2024 ============
+
+=> npx create-expo-app expo_sqlite_login --template blank;
+
+=> npx expo install expo-sqlite;
+
+=> npx expo install @react-navigation/native;
+
+=> npm install @react-navigation/native-stack;
+
+=> npx expo-doctor; ok!
