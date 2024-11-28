@@ -1,7 +1,7 @@
 
-import { SQLiteProvider, useSQLiteContext } from 'expo-sqlite';
+import { SQLiteProvider } from 'expo-sqlite';
 import Navigation from './navigation/Navigation';
-import { checkOrCreateDBPath } from './utils/db_directory';
+import { checkOrCreateDBPath } from './utils/db_path';
 import { useEffect } from 'react';
 
 export const initializeDatabase = async (db) => {

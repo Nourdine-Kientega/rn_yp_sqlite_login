@@ -9,4 +9,8 @@
 
 => npm install @react-navigation/native-stack;
 
+=> npx expo install react-native-bcrypt; at delete after
+
+=> npx expo install expo-crypto; 
+
 => npx expo-doctor; ok!

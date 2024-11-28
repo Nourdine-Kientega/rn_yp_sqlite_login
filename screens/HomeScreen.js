@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
 export default function HomeScreen({ route, navigation }) {
-  const { username } = route.params || { username: 'User' };
+  const { username, email } = route.params || { username: 'User' };
 
   const handleLogout = () => {
     navigation.navigate('Login');
@@ -10,7 +10,9 @@ export default function HomeScreen({ route, navigation }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome, {username}!</Text>
+      <Text style={styles.title}>Bienvenue!</Text>
+      <Text style={styles.title}>{username}</Text>
+      <Text style={styles.title}>{email}</Text>
       <TouchableOpacity style={styles.button} onPress={handleLogout}>
         <Text style={styles.buttonText}>Logout</Text>
       </TouchableOpacity>
